@@ -1,0 +1,4 @@
+.terraform
+/cloud_functions
+venv
+.idea
