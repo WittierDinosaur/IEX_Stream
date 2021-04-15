@@ -75,3 +75,10 @@ pipeline.
 Barring that, I've noticed something of a lack of discipline with naming 
 conventions (alternating between snake case and strike case), which is a 
 symptom of lack of time.  
+
+## Error Handling
+There is some error handling in this pipeline, but not a lot. The Cloud 
+Function is error tolerant on the API - if a bad response is returned,
+then no Pub/Sub message will be published. The Dataflow however, does not 
+currently have Error Handling. Anecdotally, I've had it running for 12 hours
+and there have been zero errors.
