@@ -66,7 +66,7 @@ Function). Usually the pipeline would have Unit and Integration Tests at the
 very least. There is also very little logging. There are print statements in
 the Cloud Function but no real logging in the Dataflow Template.  
 
-##Design Patterns
+## Design Patterns
 While I am happy with the structure of the Pipeline, in production there are 
 some different design decisions I'd make. It's pointless having 10 Cloud Alerts,
 when 1 Cloud Alert could fire to a Cloud Function that farms out Pub/Sub 
